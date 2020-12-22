@@ -400,6 +400,28 @@
                     <use href="./images/sprite.svg#close"></use>
                 </svg>
             </button>
+            <form class="modal-form">
+                <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+                <label for="name" class="modal-field">
+                    Имя
+                    <input type="text" name="name" id="name" class="modal-text">
+                </label>
+                <label for="phone" class="modal-field">
+                    Телефон
+                    <input type="tel" name="phone" id="phone" class="modal-text">
+                </label>
+                <label for="mail" class="modal-field">
+                    Почта
+                    <input type="email" name="mail" id="mail" class="modal-text">
+                </label>
+                <label for="comment" class="modal-field textarea">
+                    Коментарий
+                    <textarea name="comment" id="comment" class="modal-text-field"></textarea>
+                </label>
+                <input type="checkbox" name="policy" value="accept-policy" class="modal-policy">
+                <label for="" class="modal-policy-text">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
+                <button type="submit" class="modal-form-btn">Отправить</button>
+            </form>
         </div>
     </div>
 
