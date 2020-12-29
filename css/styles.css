@@ -969,6 +969,10 @@ address {
 }
 
 .modal-policy-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 400;
@@ -977,6 +981,12 @@ address {
   letter-spacing: 0.03em;
   color: #757575;
   margin-bottom: 30px;
+  text-align: center;
+}
+
+.policy-link {
+  color: #2196f3;
+  text-decoration: underline;
 }
 
 .modal-form-btn {
@@ -1016,4 +1026,20 @@ address {
   bottom: 11px;
   width: 18px;
   height: 18px;
+}
+
+.modal-policy {
+  appearance: none;
+}
+
+.check-box {
+  margin-right: 9px;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-image: url(../images/modal/check-off.svg);
+}
+
+.modal-policy:checked + .check-box {
+  background-image: url(../images/modal/check.svg);
 }
